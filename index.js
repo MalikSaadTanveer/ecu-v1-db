@@ -20,7 +20,7 @@ app.use(cors());
 app.use(bodyParser.json({ limit: "10mb" }));
 
 // console.log("Database url", URL);
-mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true });
+mongoose.connect(process.env.DATABASE_URL, {  });
 
 const conn = mongoose.connection;
 conn.on("open", function () {
